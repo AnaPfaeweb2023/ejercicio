@@ -1,0 +1,8 @@
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://anapfaeweb2023.github.io/ejercicio/[nc]
+RewriteRule ^(.*)$ http://www.https://anapfaeweb2023.github.io/ejercicio//$1 [r=301,nc]
+
+# Custom 400 errors
+ErrorDocument 400 /index.html
